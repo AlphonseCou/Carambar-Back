@@ -1,18 +1,16 @@
-const express = require("express");
-const cors = require("cors");
-const swaggerUi = require("swagger-ui-express");
-const swaggerJsdoc = require("swagger-jsdoc");
+import express from "express";
+import cors from "cors";
+import swaggerUi from "swagger-ui-express";
+import swaggerJsdoc from "swagger-jsdoc";
+import sequelize from "./models/database.js";
+import JokesSeeder from "./seeds/JokesSeeder.js";
+import JokesController from "./controllers/JokeController.js";
 
 const app = express();
 const PORT = 7000;
 
 app.use(cors());
 app.use(express.json());
-
-const sequelize = require("./models/database.js");
-const Joke = require("./models/Joke.js");
-const JokesSeeder = require("./seeds/JokesSeeder.js");
-const JokesController = require("./controllers/JokeController.js");
 
 const swaggerOptions = {
   definition: {
