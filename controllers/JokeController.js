@@ -1,6 +1,7 @@
 const sequelize = require("../models/database.js");
 const Joke = require("../models/Joke.js");
 
+// Fonction pour une blague au hasard
 function getRandomJoke(req, res) {
   Joke.findOne({
     order: sequelize.random(),
@@ -13,7 +14,7 @@ function getRandomJoke(req, res) {
       res.status(500).json({ error: "Internal server error" });
     });
 }
-
+// Fonction pour une blague via son id
 function getJokeById(req, res) {
   const jokeId = req.params.id;
 
@@ -30,6 +31,7 @@ function getJokeById(req, res) {
     });
 }
 
+// Fonction ajout d'une blague
 function createJoke(req, res) {
   const { content, author } = req.body;
 
@@ -43,6 +45,7 @@ function createJoke(req, res) {
     });
 }
 
+// Fonction pour avoir toutes blagues
 function getAllJokes(req, res) {
   Joke.findAll()
     .then((jokes) => {
