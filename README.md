@@ -21,7 +21,7 @@ L'application sera accessible sur http://localhost:7000.
 
 | Service                         | URL                                              |
 | ------------------------------- | ------------------------------------------------ |
-| **Repository GitHub**           | bhttps://github.com/AlphonseCou/Carambar-Bac     |
+| **Repository GitHub**           | https://github.com/AlphonseCou/Carambar-Bac      |
 | **Application déployée**        | https://carambar-back-nq59.onrender.com          |
 | **Documentation API (Swagger)** | https://carambar-back-nq59.onrender.com/api-docs |
 
