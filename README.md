@@ -1,17 +1,15 @@
 ### Installation
 
-````bash
+```bash
 # Cloner le repository
 git clone https://github.com/AlphonseCou/Carambar-Back.git
 
 # Installer les dépendances
 npm install
-### Lancement en local
 
-```bash
-# Démarrer l'application
+# Lancement en local
 npm start
-````
+```
 
 L'application sera accessible sur http://localhost:7000.
 
