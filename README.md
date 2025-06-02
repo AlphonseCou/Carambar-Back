@@ -1,9 +1,15 @@
-# Carambar-Back
+# Installation
+bash# Cloner le repository
+git clone https://github.com/AlphonseCou/Carambar-Back.git
 
-Lancement du back : npm start
+# Installer les dépendances
+npm install
+bash# Démarrer l'application
+npm start
 
-Le repo github du back : https://github.com/AlphonseCou/Carambar-Back
+L'application sera accessible sur http://localhost:7000.
+🌐 Liens utiles
+ServiceURLRepository GitHubhttps://github.com/AlphonseCou/Carambar-BackApplication déployéehttps://carambar-back-nq59.onrender.com/Documentation API (Swagger)https://carambar-back-nq59.onrender.com/api-docs
+📋 Prérequis
 
-Le deploiement sur render.com : https://dashboard.render.com/web/srv-d0tdodre5dus73fpbbpg/deploys/dep-d0tdoe3e5dus73fpbbu0?r=2025-05-31%4010%3A37%3A49%7E2025-05-31%4010%3A41%3A52
-
-Le swagger api une fois le back lancé : http://localhost:7000/api-docs/
+Node.js >= 22.15.1
